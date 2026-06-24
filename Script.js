@@ -5,7 +5,7 @@ const menuItems = [
         name: "Hamburguesa Sencilla", 
         category: "Menu", 
         price: "$100", 
-        image: "img/sencilla.jpg",
+        image: "Sencilla.jpg",
         description: "Clásica hamburguesa con ingredientes frescos."
     },
     { 
@@ -13,7 +13,7 @@ const menuItems = [
         name: "Hamburguesa de Arrachera", 
         category: "Menu", 
         price: "$120", 
-        image: "img/Arrachera.jpg",
+        image: "Arrachera.jpg",
         description: "Deliciosa hamburguesa con carne de arrachera."
     },
     { 
@@ -21,7 +21,7 @@ const menuItems = [
         name: "Hamburguesa Cheese",   
         category: "Menu", 
         price: "$150", 
-        image: "img/Queso.jpg",
+        image: "Queso.jpg",
         description: "Hamburguesa con extra de queso derretido."
     },
     // Agrega más platos aquí...
