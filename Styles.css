@@ -1,0 +1,217 @@
+/* ESTILOS GENERALES */ 
+/* Reset básico para eliminar márgenes y paddings por defecto */ 
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; /* Incluye padding y border dentro del ancho total */ 
+  font-family: Cambria, serif; /* Fuente base de todo el sitio */ 
+} 
+
+body { 
+  line-height: 1.6; /* Espaciado entre líneas para mejor lectura */ 
+  color: #6b1a12; /* Color de texto: rojo oscuro */ 
+  background-color: #fbeae9; /* Fondo: rojo muy claro/beige rosado */ 
+} 
+
+/* HEADER */ 
+.header { 
+  background: #e07a73; /* Color de fondo del header: rojo claro */ 
+  color: #6b1a12; /* Color del texto en header (rojo oscuro) */ 
+  padding: 1rem; /* Espaciado interno */ 
+  display: flex; /* Para alinear elementos en fila */ 
+  justify-content: space-between; /* Espacia logo y nav */ 
+  align-items: center; /* Centra verticalmente */ 
+  position: fixed; /* Fija el header en la parte superior */ 
+  width: 100%; /* Ocupa todo el ancho */ 
+  z-index: 1000; /* Asegura que quede encima de otros elementos */ 
+} 
+
+.logo h1 { 
+  font-family: 'Quicksand', sans-serif; /* Fuente del logo */ 
+  font-size: 1.8rem; /* Tamaño del título */ 
+  color: #6b1a12; /* Rojo oscuro */ 
+} 
+
+.nav ul { 
+  display: flex; /* Lista horizontal */ 
+  list-style: none; /* Quita los puntos de la lista */ 
+} 
+
+.nav ul li a { 
+  color: #6b1a12; /* Color de los enlaces */ 
+  text-decoration: none; /* Quita subrayado */ 
+  margin-left: 2rem; /* Espacio entre enlaces */ 
+  transition: color 0.3s; /* Efecto suave al cambiar color */ 
+  font-weight: bold; 
+} 
+
+.nav ul li a:hover { 
+  color: #d94a44; /* Cambio de color al pasar el mouse (rojo vibrante) */ 
+} 
+
+/* HERO SECTION */ 
+.hero { 
+  height: 100vh; /* Ocupa toda la altura de la pantalla */ 
+  background: url('../img/dumplings.jpg.jpg') no-repeat center center/cover; /* Imagen de fondo centrada y escalada */ 
+  display: flex; 
+  align-items: center; /* Centra verticalmente */ 
+  justify-content: center; /* Centra horizontalmente */ 
+  text-align: center; /* Centra el texto */ 
+  padding-top: 80px; /* Compensa el header fixed */ 
+} 
+
+.hero-content h2 { 
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 3rem; /* Tamaño grande para destacar */ 
+  margin-bottom: 1rem; 
+  color: #fbeae9; /* Texto rojo muy claro/beige rosado */ 
+  text-shadow: 1px 1px 6px rgba(107, 26, 18, 0.7); /* Sombra suave rojo oscuro */ 
+} 
+
+.hero-content p { 
+  font-size: 1.2rem; 
+  color: #fbeae9; 
+  margin-bottom: 2rem; 
+} 
+
+/* Botón */ 
+.btn { 
+  display: inline-block; 
+  background: #d94a44; /* Fondo rojo vibrante */ 
+  color: white; 
+  padding: 0.8rem 1.5rem; /* Espaciado interno */ 
+  border-radius: 5px; /* Bordes redondeados */ 
+  text-decoration: none; 
+  transition: background 0.3s; 
+  font-weight: bold; 
+} 
+
+.btn:hover { 
+  background: #a7332e; /* Fondo rojo oscuro al pasar mouse */ 
+} 
+
+/* IMAGEN INTERMEDIA */ 
+.imagen-intermedia { 
+  text-align: center; 
+  margin: 3rem 0; /* Espaciado arriba y abajo */ 
+} 
+
+.imagen-intermedia img { 
+  max-width: 90%; /* No sobrepasa el ancho del contenedor */ 
+  height: auto; /* Mantiene proporción */ 
+  border-radius: 10px; /* Bordes redondeados */ 
+  box-shadow: 0 5px 15px rgba(107, 26, 18, 0.2); /* Sombra suave rojo oscuro */ 
+} 
+
+/* MENÚ */ 
+.menu { 
+  padding: 5rem 2rem; /* Espaciado interno de la sección */ 
+  text-align: center; 
+} 
+
+.menu h2 { 
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 2.5rem; 
+  margin-bottom: 2rem; 
+  color: #d94a44; /* Rojo vibrante */ 
+} 
+
+.menu-category { 
+  margin-bottom: 3rem; /* Espacio entre categorías */ 
+} 
+
+.menu-category h3 { 
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 1.8rem; 
+  margin-bottom: 1rem; 
+  color: #6b1a12; /* Rojo oscuro */ 
+} 
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menu-list li {
+  background: #fff0ef; /* Fondo muy claro rosado */
+  border-radius: 10px;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 3px 8px rgba(107, 26, 18, 0.1);
+  text-align: center;
+}
+
+.menu-list li img { 
+  width: 120px; /* Ajusta ancho de las imágenes acorde a los títulos */ 
+  height: auto; /* Mantiene la proporción original */ 
+  display: block; 
+  margin: 0 auto 0.5rem auto; 
+  border-radius: 8px; /* Bordes redondeados */ 
+  object-fit: cover; 
+} 
+
+.menu-list li span { 
+  display: block; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  color: #a7332e; /* Rojo medio para los textos de los productos */ 
+}
+
+/* ASIDE */ 
+.aside { 
+  background: #fbeae9; /* Fondo rojo muy claro */ 
+  padding: 2rem; 
+  margin: 2rem; 
+  border-radius: 10px; 
+} 
+
+.aside h3 { 
+  font-family: 'Quicksand', sans-serif; 
+  margin-bottom: 1rem; 
+  color: #6b1a12; /* Rojo oscuro */ 
+} 
+
+/* FOOTER */ 
+.footer { 
+  background: #e07a73; /* Fondo rojo claro */ 
+  color: #6b1a12; 
+  text-align: center; 
+  padding: 2rem; 
+} 
+
+.footer address { 
+  font-style: normal; /* Quita cursiva por defecto */ 
+  margin-top: 1rem; 
+} 
+
+.footer a { 
+  color: #a7332e; 
+  text-decoration: none; 
+} 
+
+/* RESPONSIVE */ 
+@media (max-width: 768px) { 
+  .header { 
+    flex-direction: column; /* Header en columna en pantallas pequeñas */ 
+  } 
+  .nav ul { 
+    margin-top: 1rem; /* Espacio extra entre lista y logo */ 
+  } 
+  .nav ul li a { 
+    margin-left: 1rem; /* Reduce espacio entre enlaces */ 
+  } 
+  .menu-items { 
+    grid-template-columns: 1fr; /* Una columna en móviles */ 
+  }
+  .menu-list {
+    justify-content: center;
+  }
+  .menu-list li {
+    width: 100%;
+    max-width: 300px;
+  }
+}

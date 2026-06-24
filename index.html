@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<!-- Indica que el documento es HTML5. Es obligatorio para que el navegador 
+interprete correctamente el código. --> 
+<html lang="es"> 
+<!-- Raíz del documento HTML. lang="es" define que el idioma principal de la página 
+es español, útil para SEO y accesibilidad. --> 
+<head> 
+<meta charset="UTF-8"> 
+<!-- Define la codificación de caracteres del documento. UTF-8 permite caracteres 
+especiales como ñ, acentos y emojis. --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- Hace que la página sea responsive. Ajusta el ancho al tamaño de la pantalla 
+del dispositivo y el zoom inicial. --> 
+<title>Dani's Ham | Hamburguesas</title> 
+<!-- Título de la página que se muestra en la pestaña del navegador y en resultados 
+de búsqueda. --> 
+<link rel="stylesheet" href="css/styles.css"> 
+<!-- Enlaza el archivo CSS externo que contiene los estilos de la página. --> 
+<link rel="icon" href="img/favicon.ico"> 
+<!-- Ícono de la página que aparece en la pestaña del navegador. --> 
+</head> 
+<body> 
+<!-- Contiene todo el contenido visible de la página --> 
+<header class="header"> 
+<!-- Cabecera de la página, suele contener logo y menú de navegación --> 
+<div class="logo"> 
+<!-- Contenedor del logo y nombre de la cafetería --> 
+<h1>Dani's Ham</h1> 
+<!-- Título principal de la página. Solo debe existir un <h1> por página 
+para SEO. --> 
+<p>El mejor antojo para disfrutar</p> 
+<nav class="nav"> 
+<!-- Menú de navegación principal --> 
+<ul> 
+<!-- Lista de enlaces del menú --> 
+<li><a href="#inicio">INICIO</a></li> 
+<!-- Enlace a la sección de inicio mediante un ancla (#inicio) --> 
+<li><a href="#menu">MENÚ</a></li> 
+<li><a href="#reservas">RESERVAS</a></li> 
+<li><a href="#contacto">CONTACTO</a></li> 
+</ul> 
+</nav> 
+</header> 
+ 
+<main> 
+<!-- Contenido principal de la página --> 
+ 
+    <section id="inicio" class="hero"> 
+    <!-- Sección destacada tipo portada ("hero") --> 
+        <div class="hero-content"> 
+        <!-- Contenedor de texto y botón en el hero --> 
+            <h2>Bienvenidos a Dani's Ham</h2> 
+            <!-- Subtítulo principal del hero --> 
+            <p>Las mejores hamburguesas de la Ciudad</p> 
+            <!-- Texto descriptivo --> 
+         </div> 
+          <!--
+           - <h2>: Subtítulo (jerarquía después de <h1>).
+           - Usa <h2> a <h6> para estructurar contenidos.
+         -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2t_RsGm7hxP9_wFI0YXWsDNYom5O-U9iYbFDEVY4qwfCevQ/viewform?usp=dialog" class="btn">Reservar</a>
+         <!--
+         - .btn : Clase CSS para estilizar el botón.
+         -->
+         </div>
+         </section>
+         </div> 
+          </section> 
+ 
+    <section class="imagen-intermedia"> 
+    <!-- Sección con imagen intermedia para diseño --> 
+        <img src="img/portada.jpg" alt="Dani's Ham"> 
+        <!-- Imagen representativa del lugar, con texto alternativo para 
+accesibilidad --> 
+    </section> 
+ 
+    <section id="menu" class="menu"> 
+    <!-- Sección del menú de alimentos y bebidas --> 
+        <h2>Nuestro Menú</h2> 
+        <!-- Título de la sección --> 
+ 
+        <article class="menu-category"> 
+        <!-- Artículo independiente dentro del menú --> 
+            <h3>Bebidas</h3> 
+            <!-- Subtítulo para la categoría "Bebidas" --> 
+            <ul class="menu-list"> 
+            <!-- Lista de elementos del menú --> 
+                <li> 
+                    <img src="img/Sencilla.jpg" alt="Hamburguesa Sencilla"> 
+                    <!-- Imagen del producto --> 
+                    <span>Hamburguesa Sencilla - $100</span> 
+                    <!-- Nombre y precio del producto --> 
+                </li> 
+                <li> 
+                    <img src="img/Arrachera.jpg" alt="Hamburguesa de Arrachera"> 
+                    <span>Hamburguesa de Aracherra - $120</span> 
+                </li> 
+                <li> 
+                    <img src="img/Queso.jpg" alt="Hamburguesa de Cheese"> 
+                    <span>Hamburguesa Cheese - $150</span> 
+                </li> 
+                <li> 
+                    <img src="img/Pollo.jpg" alt="Hamburguesa de Pollo"> 
+                    <span>Hamburguesa de Pollo - $110</span> 
+                </li> 
+            </ul> 
+        </article> 
+ 
+        <article class="menu-category"> 
+        <!-- Otra categoría dentro del menú --> 
+            <h3>Bebidas</h3> 
+            <ul class="menu-list"> 
+                <li> 
+                    <img src="img/Naranjada.jpg" alt="Naranjada"> 
+                    <span>Naranjada - $45</span> 
+</li> 
+<li> 
+<img src="img/Limonada.jpg" alt="Limonada"> 
+<span>Limonada - $45</span> 
+</li> 
+<li> 
+<img src="img/Refresco.jpg" alt="Refrescos"> 
+<span>Refrescos - $30</span> 
+</li> 
+</ul> 
+</article> 
+</section> 
+</main> 
+<aside class="aside"> 
+<!-- Contenido secundario, como promociones --> 
+<h3>PROMOCIONES</h3> 
+<p>Todos los Jueves: Combo de cualquier hamburguesa + Refresco = $140</p> 
+</aside> 
+<footer id="contacto" class="footer"> 
+<!-- Pie de página con información de contacto --> 
+<address> 
+<!-- Etiqueta semántica para datos de contacto --> 
+Av. Reforma #68, Ciudad de México<br> 
+Teléfono: <a href="tel:+123456789">+56 847 946 091</a> 
+<!-- Enlace que permite llamar directamente desde móviles --> 
+ <!-- 
+              href="tel:+123456789": Enlace para llamar desde móviles.
+            -->
+        </address>
+        <!-- Copyright -->
+        <p class="copyright">&copy; 2025 Dani's Ham</p>
+        
+        <!-- Redes sociales -->
+        <div class="social">
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+        </div>
+
+      </div>
+    </footer>
+     <script src="js/script1.js"></script>
+</body> 
+</html> 
